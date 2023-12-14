@@ -1,0 +1,31 @@
+
+
+
+
+
+     [34m          XXXXXXXXXXXXXXXXXXXX
+              /                    /\
+             /                    /  \
+            /                    /    \
+           /                    /      \
+          /                    /        \
+         /                    /          \
+        /                    /            \
+       /                    /              \
+      /                    /                \
+     /XXXXXXXXXXXXXXXXXXXX/                  \
+     \                    \                  /
+      \                    \                /
+       \                    \              /
+        \                    \            /
+         \                    \          /
+          \                    \        /
+           \                    \      /
+            \                    \    /
+             \                    \  /
+              \XXXXXXXXXXXXXXXXXXXX\/
+     [0m
+
+
+
+

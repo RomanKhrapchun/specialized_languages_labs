@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module lab5</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">lab5</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Casus%5Cdesktop%5C%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D1%96%20%D0%BC%D0%BE%D0%B2%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F%5Clab5%5Clab5.py">c:\users\asus\desktop\спеціалізовані мови програмування\lab5\lab5.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="abc.html#ABC">abc.ABC</a>(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="lab5.html#Command">Command</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="lab5.html#Generate3DFigureCommand">Generate3DFigureCommand</a>
+</dt><dt class="heading-text"><a href="lab5.html#SetColorCommand">SetColorCommand</a>
+</dt><dt class="heading-text"><a href="lab5.html#SetSizeCommand">SetSizeCommand</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="lab5.html#Figure">Figure</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="lab5.html#Cube">Cube</a>
+</dt><dt class="heading-text"><a href="lab5.html#FigureArtInterface">FigureArtInterface</a>
+</dt><dt class="heading-text"><a href="lab5.html#Square">Square</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Command">class <strong>Command</strong></a>(<a href="abc.html#ABC">abc.ABC</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Абстрактний&nbsp;клас&nbsp;для&nbsp;представлення&nbsp;команди.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Command-execute">execute</a>():&nbsp;Абстрактний&nbsp;метод&nbsp;для&nbsp;виконання&nbsp;команди.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#Command">Command</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Command-execute"><strong>execute</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'execute'})</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Cube">class <strong>Cube</strong></a>(<a href="lab5.html#Figure">Figure</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;представлення&nbsp;куба.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Cube-generateCube">generateCube</a>():&nbsp;Генерує&nbsp;куб&nbsp;з&nbsp;врахуванням&nbsp;розміру.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Cube-generateFigure">generateFigure</a>():&nbsp;Перевизначений&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;куба&nbsp;з&nbsp;врахуванням&nbsp;кольору.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#Cube">Cube</a></dd>
+<dd><a href="lab5.html#Figure">Figure</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Cube-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Cube-generateCube"><strong>generateCube</strong></a>(self)</dt><dd><span class="code">Генерує&nbsp;куб&nbsp;з&nbsp;врахуванням&nbsp;розміру.</span></dd></dl>
+
+<dl><dt><a name="Cube-generateFigure"><strong>generateFigure</strong></a>(self)</dt><dd><span class="code">Перевизначений&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;куба&nbsp;з&nbsp;врахуванням&nbsp;кольору.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><a name="Cube-setColor"><strong>setColor</strong></a>(self, color)</dt><dd><span class="code">Встановлює&nbsp;колір&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="Cube-setSize"><strong>setSize</strong></a>(self, size)</dt><dd><span class="code">Встановлює&nbsp;розмір&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Figure">class <strong>Figure</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Базовий&nbsp;клас&nbsp;для&nbsp;представлення&nbsp;геометричних&nbsp;фігур.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;(int):&nbsp;Розмір&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;(str):&nbsp;Колір&nbsp;фігури.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Figure-setSize">setSize</a>(size:&nbsp;int):&nbsp;Встановлює&nbsp;розмір&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Figure-setColor">setColor</a>(color:&nbsp;str):&nbsp;Встановлює&nbsp;колір&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Figure-generateFigure">generateFigure</a>():&nbsp;Абстрактний&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;фігури.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Figure-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Figure-generateFigure"><strong>generateFigure</strong></a>(self)</dt><dd><span class="code">Абстрактний&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="Figure-setColor"><strong>setColor</strong></a>(self, color)</dt><dd><span class="code">Встановлює&nbsp;колір&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="Figure-setSize"><strong>setSize</strong></a>(self, size)</dt><dd><span class="code">Встановлює&nbsp;розмір&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="FigureArtInterface">class <strong>FigureArtInterface</strong></a>(<a href="lab5.html#Figure">Figure</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;інтерфейсу&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;геометричними&nbsp;фігурами.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;type&nbsp;(str):&nbsp;Тип&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;left_padding&nbsp;(int):&nbsp;Лівий&nbsp;відступ.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;top_padding&nbsp;(int):&nbsp;Верхній&nbsp;відступ.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bottom_padding&nbsp;(int):&nbsp;Нижній&nbsp;відступ.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;commands&nbsp;(dict):&nbsp;Словник&nbsp;команд&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;інтерфейсом.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-setType">setType</a>(type:&nbsp;str):&nbsp;Встановлює&nbsp;тип&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-setPaddings">setPaddings</a>(left_padding:&nbsp;int,&nbsp;top_padding:&nbsp;int,&nbsp;bottom_padding:&nbsp;int):&nbsp;Встановлює&nbsp;відступи&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-setPrimaryData">setPrimaryData</a>():&nbsp;Запитує&nbsp;користувача&nbsp;про&nbsp;основні&nbsp;дані&nbsp;фігури.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generateWithLeftPadding">generateWithLeftPadding</a>(text:&nbsp;str):&nbsp;Генерує&nbsp;текст&nbsp;з&nbsp;лівим&nbsp;відступом.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generateWithTopPadding">generateWithTopPadding</a>(text:&nbsp;str):&nbsp;Генерує&nbsp;текст&nbsp;з&nbsp;верхнім&nbsp;відступом.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generateWithBottomPadding">generateWithBottomPadding</a>(text:&nbsp;str):&nbsp;Генерує&nbsp;текст&nbsp;з&nbsp;нижнім&nbsp;відступом.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generateWithPaddings">generateWithPaddings</a>(text:&nbsp;str):&nbsp;Генерує&nbsp;текст&nbsp;з&nbsp;врахуванням&nbsp;усіх&nbsp;відступів.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generate3dFigure">generate3dFigure</a>():&nbsp;Генерує&nbsp;3D&nbsp;фігуру&nbsp;відповідно&nbsp;до&nbsp;вказаного&nbsp;типу.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-generate2dFigure">generate2dFigure</a>():&nbsp;Генерує&nbsp;2D&nbsp;фігуру&nbsp;відповідно&nbsp;до&nbsp;вказаного&nbsp;типу.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-saveToFile2d">saveToFile2d</a>():&nbsp;Записує&nbsp;2D&nbsp;фігуру&nbsp;в&nbsp;файл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-saveToFile3d">saveToFile3d</a>():&nbsp;Записує&nbsp;3D&nbsp;фігуру&nbsp;в&nbsp;файл.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-show_menu">show_menu</a>():&nbsp;Виводить&nbsp;меню&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;інтерфейсом.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-loopMenu">loopMenu</a>():&nbsp;Запускає&nbsp;цикл&nbsp;взаємодії&nbsp;з&nbsp;інтерфейсом.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FigureArtInterface-launch">launch</a>():&nbsp;Запускає&nbsp;інтерфейс.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#FigureArtInterface">FigureArtInterface</a></dd>
+<dd><a href="lab5.html#Figure">Figure</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FigureArtInterface-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generate2dFigure"><strong>generate2dFigure</strong></a>(self)</dt><dd><span class="code">Генерує&nbsp;2D&nbsp;фігуру&nbsp;відповідно&nbsp;до&nbsp;вказаного&nbsp;типу.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generate3dFigure"><strong>generate3dFigure</strong></a>(self)</dt><dd><span class="code">Генерує&nbsp;3D&nbsp;фігуру&nbsp;відповідно&nbsp;до&nbsp;вказаного&nbsp;типу.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generateWithBottomPadding"><strong>generateWithBottomPadding</strong></a>(self, text)</dt><dd><span class="code">Генерує&nbsp;текст&nbsp;з&nbsp;нижнім&nbsp;відступом.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generateWithLeftPadding"><strong>generateWithLeftPadding</strong></a>(self, text)</dt><dd><span class="code">Генерує&nbsp;текст&nbsp;з&nbsp;лівим&nbsp;відступом.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generateWithPaddings"><strong>generateWithPaddings</strong></a>(self, text)</dt><dd><span class="code">Генерує&nbsp;текст&nbsp;з&nbsp;врахуванням&nbsp;усіх&nbsp;відступів.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-generateWithTopPadding"><strong>generateWithTopPadding</strong></a>(self, text)</dt><dd><span class="code">Генерує&nbsp;текст&nbsp;з&nbsp;верхнім&nbsp;відступом.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-launch"><strong>launch</strong></a>(self)</dt><dd><span class="code">Запускає&nbsp;інтерфейс.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-loopMenu"><strong>loopMenu</strong></a>(self)</dt><dd><span class="code">Запускає&nbsp;цикл&nbsp;взаємодії&nbsp;з&nbsp;інтерфейсом.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-saveToFile2d"><strong>saveToFile2d</strong></a>(self)</dt><dd><span class="code">Записує&nbsp;2D&nbsp;фігуру&nbsp;в&nbsp;файл.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-saveToFile3d"><strong>saveToFile3d</strong></a>(self)</dt><dd><span class="code">Записує&nbsp;3D&nbsp;фігуру&nbsp;в&nbsp;файл.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-setPaddings"><strong>setPaddings</strong></a>(self, left_padding, top_padding, bottom_padding)</dt><dd><span class="code">Встановлює&nbsp;відступи&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-setPrimaryData"><strong>setPrimaryData</strong></a>(self)</dt><dd><span class="code">Запитує&nbsp;користувача&nbsp;про&nbsp;основні&nbsp;дані&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-setType"><strong>setType</strong></a>(self, type)</dt><dd><span class="code">Встановлює&nbsp;тип&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="FigureArtInterface-show_menu"><strong>show_menu</strong></a>()</dt><dd><span class="code">Виводить&nbsp;меню&nbsp;для&nbsp;взаємодії&nbsp;з&nbsp;інтерфейсом.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><a name="FigureArtInterface-generateFigure"><strong>generateFigure</strong></a>(self)</dt><dd><span class="code">Абстрактний&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-setColor"><strong>setColor</strong></a>(self, color)</dt><dd><span class="code">Встановлює&nbsp;колір&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="FigureArtInterface-setSize"><strong>setSize</strong></a>(self, size)</dt><dd><span class="code">Встановлює&nbsp;розмір&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Generate3DFigureCommand">class <strong>Generate3DFigureCommand</strong></a>(<a href="lab5.html#Command">Command</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Generate3DFigureCommand">Generate3DFigureCommand</a>(figure_interface)<br>
+&nbsp;<br>
+Команда&nbsp;для&nbsp;генерації&nbsp;3D&nbsp;фігури&nbsp;через&nbsp;інтерфейс.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;figure_interface&nbsp;(<a href="#FigureArtInterface">FigureArtInterface</a>):&nbsp;Інтерфейс&nbsp;фігури,&nbsp;через&nbsp;який&nbsp;відбувається&nbsp;генерація.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Generate3DFigureCommand-execute">execute</a>():&nbsp;Виконує&nbsp;команду&nbsp;генерації&nbsp;3D&nbsp;фігури.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#Generate3DFigureCommand">Generate3DFigureCommand</a></dd>
+<dd><a href="lab5.html#Command">Command</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Generate3DFigureCommand-__init__"><strong>__init__</strong></a>(self, figure_interface)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Generate3DFigureCommand-execute"><strong>execute</strong></a>(self)</dt><dd><span class="code">Виконує&nbsp;команду&nbsp;генерації&nbsp;3D&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Command">Command</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SetColorCommand">class <strong>SetColorCommand</strong></a>(<a href="lab5.html#Command">Command</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#SetColorCommand">SetColorCommand</a>(figure_interface,&nbsp;new_color)<br>
+&nbsp;<br>
+Команда&nbsp;для&nbsp;встановлення&nbsp;кольору&nbsp;фігури&nbsp;через&nbsp;інтерфейс.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;figure_interface&nbsp;(<a href="#FigureArtInterface">FigureArtInterface</a>):&nbsp;Інтерфейс&nbsp;фігури,&nbsp;для&nbsp;якого&nbsp;встановлюється&nbsp;колір.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_color&nbsp;(str):&nbsp;Новий&nbsp;колір&nbsp;фігури.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#SetColorCommand-execute">execute</a>():&nbsp;Виконує&nbsp;команду&nbsp;встановлення&nbsp;коліру&nbsp;фігури.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#SetColorCommand">SetColorCommand</a></dd>
+<dd><a href="lab5.html#Command">Command</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SetColorCommand-__init__"><strong>__init__</strong></a>(self, figure_interface, new_color)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="SetColorCommand-execute"><strong>execute</strong></a>(self)</dt><dd><span class="code">Виконує&nbsp;команду&nbsp;встановлення&nbsp;коліру&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Command">Command</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SetSizeCommand">class <strong>SetSizeCommand</strong></a>(<a href="lab5.html#Command">Command</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#SetSizeCommand">SetSizeCommand</a>(figure_interface,&nbsp;new_size)<br>
+&nbsp;<br>
+Команда&nbsp;для&nbsp;встановлення&nbsp;розміру&nbsp;фігури&nbsp;через&nbsp;інтерфейс.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;figure_interface&nbsp;(<a href="#FigureArtInterface">FigureArtInterface</a>):&nbsp;Інтерфейс&nbsp;фігури,&nbsp;для&nbsp;якого&nbsp;встановлюється&nbsp;розмір.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;new_size&nbsp;(int):&nbsp;Новий&nbsp;розмір&nbsp;фігури.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#SetSizeCommand-execute">execute</a>():&nbsp;Виконує&nbsp;команду&nbsp;встановлення&nbsp;розміру&nbsp;фігури.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#SetSizeCommand">SetSizeCommand</a></dd>
+<dd><a href="lab5.html#Command">Command</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SetSizeCommand-__init__"><strong>__init__</strong></a>(self, figure_interface, new_size)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="SetSizeCommand-execute"><strong>execute</strong></a>(self)</dt><dd><span class="code">Виконує&nbsp;команду&nbsp;встановлення&nbsp;розміру&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Command">Command</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Square">class <strong>Square</strong></a>(<a href="lab5.html#Figure">Figure</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Клас&nbsp;для&nbsp;представлення&nbsp;квадрата.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Square-generateSquare">generateSquare</a>():&nbsp;Генерує&nbsp;квадрат&nbsp;з&nbsp;врахуванням&nbsp;розміру.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Square-generateFigure">generateFigure</a>():&nbsp;Перевизначений&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;квадрата&nbsp;з&nbsp;врахуванням&nbsp;кольору.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="lab5.html#Square">Square</a></dd>
+<dd><a href="lab5.html#Figure">Figure</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Square-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Square-generateFigure"><strong>generateFigure</strong></a>(self)</dt><dd><span class="code">Перевизначений&nbsp;метод&nbsp;для&nbsp;генерації&nbsp;квадрата&nbsp;з&nbsp;врахуванням&nbsp;кольору.</span></dd></dl>
+
+<dl><dt><a name="Square-generateSquare"><strong>generateSquare</strong></a>(self)</dt><dd><span class="code">Генерує&nbsp;квадрат&nbsp;з&nbsp;врахуванням&nbsp;розміру.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><a name="Square-setColor"><strong>setColor</strong></a>(self, color)</dt><dd><span class="code">Встановлює&nbsp;колір&nbsp;фігури.</span></dd></dl>
+
+<dl><dt><a name="Square-setSize"><strong>setSize</strong></a>(self, size)</dt><dd><span class="code">Встановлює&nbsp;розмір&nbsp;фігури.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="lab5.html#Figure">Figure</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-paintText"><strong>paintText</strong></a>(text, color)</dt><dd><span class="code">Функція&nbsp;для&nbsp;забарвлення&nbsp;тексту&nbsp;в&nbsp;заданий&nbsp;колір.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Вхідний&nbsp;текст.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color&nbsp;(str):&nbsp;Колір&nbsp;для&nbsp;забарвлення.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Забарвлений&nbsp;текст.</span></dd></dl>
+ <dl><dt><a name="-run_lab5"><strong>run_lab5</strong></a>()</dt></dl>
+ <dl><dt><a name="-textFileSaver"><strong>textFileSaver</strong></a>(filename, text)</dt><dd><span class="code">Функція&nbsp;для&nbsp;збереження&nbsp;тексту&nbsp;у&nbsp;файл.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;(str):&nbsp;Назва&nbsp;файлу.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;Текст&nbsp;для&nbsp;збереження&nbsp;у&nbsp;файлі.</span></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,44 @@
+2023-12-09 19:54:01,898 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-09 19:54:06,679 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-09 19:54:08,097 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-09 19:54:08,515 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-09 19:54:08,929 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-09 19:54:09,410 - ERROR: Помилка обробки команди 2: UserInterface.save_data() missing 1 required positional argument: 'file_format'
+2023-12-13 14:23:43,591 - ERROR: Помилка виклику API: HTTPSConnectionPool(host='jsonplaceholder.typicode.com', port=443): Max retries exceeded with url: /todos (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000016C527D2610>: Failed to resolve 'jsonplaceholder.typicode.com' ([Errno 11001] getaddrinfo failed)"))
+2023-12-13 14:37:02,630 - INFO: Running Lab 1
+2023-12-13 14:37:44,191 - INFO: Running Lab 1
+2023-12-13 14:38:09,097 - INFO: Running Lab 1
+2023-12-13 14:40:53,715 - INFO: Running Lab 1
+2023-12-13 14:45:11,268 - INFO: Running Lab 2
+2023-12-13 14:45:23,602 - INFO: Running Lab 1
+2023-12-13 14:47:58,823 - INFO: Running Lab 8
+2023-12-13 14:48:08,417 - INFO: Running Lab 7
+2023-12-13 14:48:13,778 - INFO: Lab 7 completed
+2023-12-13 14:48:16,868 - INFO: Running Lab 5
+2023-12-13 14:48:24,661 - INFO: Lab 5 completed
+2023-12-13 14:48:26,410 - INFO: Running Lab 4
+2023-12-13 14:48:47,415 - INFO: Lab 4 completed
+2023-12-13 14:48:49,939 - INFO: Running Lab 3
+2023-12-13 14:49:11,187 - INFO: Lab 3 completed
+2023-12-13 14:49:13,423 - INFO: Running Lab 2
+2023-12-13 14:49:22,291 - INFO: Lab 2 completed
+2023-12-13 14:49:23,104 - INFO: Running Lab 1
+2023-12-13 14:50:42,961 - INFO: Running Lab 1
+2023-12-13 14:53:01,425 - INFO: Running Lab 8
+2023-12-13 15:04:01,235 - INFO: Running Lab 1
+2023-12-13 15:07:37,153 - INFO: Running Lab 1
+2023-12-13 15:09:39,620 - INFO: Running Lab 1
+2023-12-13 15:09:45,393 - INFO: Lab 2 completed
+2023-12-13 15:18:15,695 - INFO: Performing static code analysis with Pylint
+2023-12-13 15:24:08,128 - INFO: Performing static code analysis with Pylint
+2023-12-13 23:49:48,470 - INFO: Running Lab 4
+2023-12-13 23:50:12,024 - INFO: Lab 4 completed
+2023-12-13 23:53:23,582 - INFO: Running Lab 4
+2023-12-14 00:02:35,408 - INFO: Running Lab 1
+2023-12-14 00:02:48,085 - INFO: Lab 1 completed
+2023-12-14 00:07:44,493 - INFO: Running Lab 2
+2023-12-14 00:20:08,470 - INFO: Running Lab 2
+2023-12-14 01:17:41,045 - INFO: Running Lab 2
+2023-12-14 01:24:24,581 - INFO: Running Lab 8
+2023-12-14 11:33:15,041 - INFO: Running Lab 1
+2023-12-14 14:03:40,768 - INFO: Running Lab 1
